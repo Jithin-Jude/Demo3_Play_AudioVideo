@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#434343">
+    <Button
+        android:id="@+id/chooseVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="chooseVideo"
+        android:text="Choose Video"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="130dp"/>
+
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="400dp"
+        android:layout_marginTop="400dp"
+        android:background="#434343">
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="playButtonFunction"
+        android:text="Play"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/pauseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pauseButtonFunction"
+        android:text="Pause"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="stopButtonFunction"
+        android:text="Stop"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/openBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openButtonFunction"
+            android:text="..."
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp">
+
+    <VideoView android:id="@+id/videoView"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"/>
+
+    </LinearLayout>>
+
+    </RelativeLayout>
